@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crystal Collector</title>
+	
+	<!--css reset and style files-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	<!--jQeury CDN-->
+	<script
+  	src="http://code.jquery.com/jquery-3.2.1.js"
+  	integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  	crossorigin="anonymous">
+  	</script>
+  	
+  	<!--javascript file-->
+  	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+<body>
+
+<header>
+	<h1 id="title">Crystal Collector</h1>
+</header>
+
+<div class="instruction">
+
+	<p>You will be given a random number at the start of the game.</p>
+	<p>There are 4 crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+	<p>You will win the game by matching your total score to the random number.</p>
+	<p>You lose the game if your total score goes above the random number.</p>
+	<p>The value of each  crystal is hidden from you until you click on it.</p>
+	<p> Each time when the game starts, the game will change the value of each crystal.</p>
+</div>
+
+
+<div class="container"> 
+<!--will contain the random number, player score against random number, player overall score: wins and losses, the crystals that wil contain numbers-->
+
+		<div id="randomnumber"></div> <!--or make into class-->
+
+		<div class="scoreboard">
+     			Wins:<div id="wins"></div>
+     			Losses:<div id="losses"></div>
+		</div>
+
+		<div class="crystals">
+		<!--transfer to javascript as variable array-->
+				<img src="assets/images/red.jpg" style="width: 100px;height: 100px;" class="click" id="red"> 
+				<img src="assets/images/blue.png" style="width: 100px;height: 100px;" class="click" id="blue">
+				<img src="assets/images/yellow.jpg" style="width: 100px;height: 100px;" class="click" id="yellow">
+				<img src="assets/images/green.jpg" style="width: 100px;height: 100px;" class="click" id="green">
+		</div>
+
+		<div class="scoretag">
+ 				<h3>Your total score is:</h3>
+ 		</div>
+
+	<div class="addedup">addedup</div>
+</div> <!--close container-->
+
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+
+
+
+</body>
+</html>
